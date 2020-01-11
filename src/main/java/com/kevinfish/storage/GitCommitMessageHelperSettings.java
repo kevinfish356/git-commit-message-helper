@@ -54,17 +54,15 @@ public class GitCommitMessageHelperSettings implements PersistentStateComponent<
         try {
             dataSettings.setTemplate(GitCommitConstants.DEFAULT_TEMPLATE);
             List<TypeAlias> typeAliases = new LinkedList<>();
-            typeAliases.add(new TypeAlias("feature", "A new feature"));
+            typeAliases.add(new TypeAlias("feat", "A new feature"));
             typeAliases.add(new TypeAlias("fix", "A bug fix"));
-            typeAliases.add(new TypeAlias("docs", "Documentation only changes"));
-            typeAliases.add(new TypeAlias("style", "Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)"));
             typeAliases.add(new TypeAlias("refactor", "A code change that neither fixes a bug nor adds a feature"));
-            typeAliases.add(new TypeAlias("perf", "A code change that improves performance"));
+            typeAliases.add(new TypeAlias("style", "Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)"));
+            typeAliases.add(new TypeAlias("docs", "Documentation only changes"));
             typeAliases.add(new TypeAlias("test", "Adding missing tests or correcting existing tests"));
-            typeAliases.add(new TypeAlias("build", "Changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm)"));
-            typeAliases.add(new TypeAlias("ci", "Changes to our CI configuration files and scripts (example scopes: Travis, Circle, BrowserStack, SauceLabs)"));
-            typeAliases.add(new TypeAlias("chore", "Other changes that don't modify src or test files"));
-            typeAliases.add(new TypeAlias("revert", "Reverts a previous commit"));
+            typeAliases.add(new TypeAlias("version", "Version bump/new release; no production code change"));
+            typeAliases.add(new TypeAlias("hack", "Edits regarding licensing; no production code change"));
+            typeAliases.add(new TypeAlias("defaults", "Changes default options"));
             dataSettings.setTypeAliases(typeAliases);
         } catch (Exception e) {
             log.error("loadDefaultSettings failed", e);
