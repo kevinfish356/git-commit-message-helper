@@ -1,4 +1,4 @@
-#if($type)${type}#end #if($subject)${subject}#end
+#if($type)[${type}]#end #if($subject)${subject}#end
 ${newline}
 #if($body)${body}#end
 ${newline}

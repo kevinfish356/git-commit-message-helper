@@ -13,24 +13,20 @@ public class CommitMessage {
     private static final int MAX_LINE_LENGTH = 72; // https://stackoverflow.com/a/2120040/5138796
     private final String content;
 
-    public CommitMessage(GitCommitMessageHelperSettings settings, TypeAlias typeAlias, String changeScope, String shortDescription, String longDescription, String closedIssues, String breakingChanges) {
+    public CommitMessage(GitCommitMessageHelperSettings settings, TypeAlias typeAlias, String subject, String shortDescription, String closedIssues) {
         this.content = buildContent(
                 settings,
                 typeAlias,
-                changeScope,
+                subject,
                 shortDescription,
-                longDescription,
-                breakingChanges,
                 closedIssues
         );
     }
 
     private String buildContent(GitCommitMessageHelperSettings settings,
                                 TypeAlias typeAlias,
-                                String changeScope,
+                                String subject,
                                 String shortDescription,
-                                String longDescription,
-                                String breakingChanges,
                                 String closedIssues
     ) {
 
@@ -40,17 +36,11 @@ public class CommitMessage {
                 commitTemplate.setType(typeAlias.getTitle());
             }
         }
-        if (StringUtils.isNotBlank(changeScope)) {
-            commitTemplate.setScope(changeScope);
+        if (StringUtils.isNotBlank(subject)) {
+            commitTemplate.setSubject(subject);
         }
         if (StringUtils.isNotBlank(shortDescription)) {
-            commitTemplate.setSubject(shortDescription);
-        }
-        if (StringUtils.isNotBlank(longDescription)) {
-            commitTemplate.setBody(longDescription);
-        }
-        if (StringUtils.isNotBlank(breakingChanges)) {
-            commitTemplate.setChanges(breakingChanges);
+            commitTemplate.setBody(shortDescription);
         }
         if (StringUtils.isNotBlank(closedIssues)) {
             commitTemplate.setCloses(closedIssues);

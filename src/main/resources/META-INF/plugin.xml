@@ -1,7 +1,7 @@
 <idea-plugin>
     <id>commit-message-helper-idea-plugin</id>
     <name>Git Commit Message Helper</name>
-    <vendor email="13103779727@163.com" url="https://github.com/AutismSuperman">FuLinLin</vendor>
+    <vendor email="kev3132@gmail.com" url="https://github.com/kevinfish356/">kevinfish</vendor>
     <version>1.0.0</version>
     <description>
         <![CDATA[

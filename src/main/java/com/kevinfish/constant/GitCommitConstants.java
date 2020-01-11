@@ -6,7 +6,7 @@ package com.kevinfish.constant;
  * @create: 2019-12-08 11:37
  **/
 public class GitCommitConstants {
-    public static final String DEFAULT_TEMPLATE = "#if($type)${type}#end #if($subject)${subject}#end\n"
+    public static final String DEFAULT_TEMPLATE = "#if($type)[${type}]#end #if($subject)${subject}#end\n"
             + "${newline}\n"
             + "#if($body)${body}#end\n"
             + "${newline}\n"
