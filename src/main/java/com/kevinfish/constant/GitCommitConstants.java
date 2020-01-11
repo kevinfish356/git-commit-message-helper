@@ -1,4 +1,4 @@
-package com.fulinlin.constant;
+package com.kevinfish.constant;
 
 /**
  * @program: git-commit-message-helper

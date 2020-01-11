@@ -1,7 +1,7 @@
-package com.fulinlin.action;
+package com.kevinfish.action;
 
-import com.fulinlin.storage.GitCommitMessageHelperSettings;
-import com.fulinlin.ui.CommitDialog;
+import com.kevinfish.storage.GitCommitMessageHelperSettings;
+import com.kevinfish.ui.CommitDialog;
 import com.intellij.openapi.actionSystem.AnAction;
 import com.intellij.openapi.actionSystem.AnActionEvent;
 import com.intellij.openapi.components.ServiceManager;

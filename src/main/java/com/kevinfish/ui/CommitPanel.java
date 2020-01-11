@@ -1,12 +1,10 @@
-package com.fulinlin.ui;
+package com.kevinfish.ui;
 
-import com.fulinlin.model.TypeAlias;
-import com.fulinlin.storage.GitCommitMessageHelperSettings;
+import com.kevinfish.model.TypeAlias;
+import com.kevinfish.storage.GitCommitMessageHelperSettings;
 import com.intellij.openapi.project.Project;
-import com.intellij.openapi.vfs.VfsUtil;
 
 import javax.swing.*;
-import java.io.File;
 import java.util.List;
 
 

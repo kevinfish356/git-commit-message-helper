@@ -69,19 +69,19 @@
 
     <extensions defaultExtensionNs="com.intellij">
         <!-- Add your extensions here -->
-        <applicationService serviceImplementation="com.fulinlin.storage.GitCommitMessageHelperSettings"/>
-        <applicationConfigurable instance="com.fulinlin.setting.ui.TemplateEditPaneConfigurable"/>
+        <applicationService serviceImplementation="com.kevinfish.storage.GitCommitMessageHelperSettings"/>
+        <applicationConfigurable instance="com.kevinfish.setting.ui.TemplateEditPaneConfigurable"/>
     </extensions>
 
     <application-components>
         <!-- Add your application components here -->
         <component>
-            <implementation-class>com.fulinlin.setting.ui.TemplateEditPaneConfigurable</implementation-class>
+            <implementation-class>com.kevinfish.setting.ui.TemplateEditPaneConfigurable</implementation-class>
         </component>
     </application-components>
 
     <actions>
-        <action id="Commit.Button" class="com.fulinlin.action.CreateCommitAction"
+        <action id="Commit.Button" class="com.kevinfish.action.CreateCommitAction"
                 text="Create Commit Message"
                 description="Create commit message"
                 icon="PluginIcons.ICON">

@@ -1,6 +1,6 @@
-package com.fulinlin.utils;
+package com.kevinfish.utils;
 
-import com.fulinlin.model.CommitTemplate;
+import com.kevinfish.model.CommitTemplate;
 import org.apache.velocity.VelocityContext;
 import org.apache.velocity.app.VelocityEngine;
 import org.apache.velocity.runtime.RuntimeConstants;

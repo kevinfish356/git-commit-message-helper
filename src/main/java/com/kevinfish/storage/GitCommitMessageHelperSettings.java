@@ -1,8 +1,8 @@
-package com.fulinlin.storage;
+package com.kevinfish.storage;
 
-import com.fulinlin.constant.GitCommitConstants;
-import com.fulinlin.model.DataSettings;
-import com.fulinlin.model.TypeAlias;
+import com.kevinfish.constant.GitCommitConstants;
+import com.kevinfish.model.DataSettings;
+import com.kevinfish.model.TypeAlias;
 import com.intellij.openapi.components.PersistentStateComponent;
 import com.intellij.openapi.components.State;
 import com.intellij.openapi.components.Storage;

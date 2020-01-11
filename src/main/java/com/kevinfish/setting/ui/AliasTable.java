@@ -1,7 +1,7 @@
-package com.fulinlin.setting.ui;
+package com.kevinfish.setting.ui;
 
-import com.fulinlin.model.TypeAlias;
-import com.fulinlin.storage.GitCommitMessageHelperSettings;
+import com.kevinfish.model.TypeAlias;
+import com.kevinfish.storage.GitCommitMessageHelperSettings;
 import com.intellij.openapi.diagnostic.Logger;
 import com.intellij.ui.JBColor;
 import com.intellij.ui.table.JBTable;

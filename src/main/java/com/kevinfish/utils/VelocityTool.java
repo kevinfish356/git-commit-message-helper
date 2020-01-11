@@ -1,4 +1,4 @@
-package com.fulinlin.utils;
+package com.kevinfish.utils;
 
 import org.apache.commons.lang.StringUtils;
 

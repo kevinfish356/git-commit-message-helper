@@ -1,9 +1,9 @@
-package com.fulinlin.ui;
+package com.kevinfish.ui;
 
-import com.fulinlin.model.CommitTemplate;
-import com.fulinlin.model.TypeAlias;
-import com.fulinlin.storage.GitCommitMessageHelperSettings;
-import com.fulinlin.utils.VelocityUtils;
+import com.kevinfish.model.CommitTemplate;
+import com.kevinfish.model.TypeAlias;
+import com.kevinfish.storage.GitCommitMessageHelperSettings;
+import com.kevinfish.utils.VelocityUtils;
 import org.apache.commons.lang.StringUtils;
 
 /**
